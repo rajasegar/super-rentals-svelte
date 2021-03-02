@@ -5,7 +5,8 @@
     "test": "web-test-runner \"src/**/*.test.js\""
   },
   "dependencies": {
-    "svelte": "^3.24.0"
+    "svelte": "^3.24.0",
+    "svelte-routing": "^1.5.0"
   },
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.0.5",
@@ -14,6 +15,7 @@
     "@testing-library/svelte": "^3.0.0",
     "@web/test-runner": "^0.12.0",
     "chai": "^4.2.0",
-    "snowpack": "^3.0.1"
+    "snowpack": "^3.0.1",
+    "svelte-hmr": "^0.12.7"
   }
 }

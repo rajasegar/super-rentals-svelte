@@ -1,5 +1,6 @@
 dependencies:
   svelte: 3.35.0
+  svelte-routing: 1.5.0_svelte@3.35.0
 devDependencies:
   '@snowpack/plugin-dotenv': 2.0.5
   '@snowpack/plugin-svelte': 3.5.2_svelte@3.35.0
@@ -8,6 +9,7 @@ devDependencies:
   '@web/test-runner': 0.12.15
   chai: 4.3.0
   snowpack: 3.0.13
+  svelte-hmr: 0.12.7_svelte@3.35.0
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.12.13:
@@ -2210,6 +2212,14 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-SROWH0rB0DJ+0Ii264cprmNu/NJyZacs5wFD71ya93Cg/oA2lKHgQm4F6j0EWA4ktFMzeuJJm/eX6fka39hEHA==
+  /svelte-routing/1.5.0_svelte@3.35.0:
+    dependencies:
+      svelte: 3.35.0
+    dev: false
+    peerDependencies:
+      svelte: ^3.20.x
+    resolution:
+      integrity: sha512-4ftcSO2x5kzCUWQKm9Td6/C+t7lRjMEo72utRO0liS/aWZuRwAXOBl3y+hWZw8tV+DTGElqaAAyi44AuWXcVBg==
   /svelte/3.35.0:
     dev: false
     engines:
@@ -2438,3 +2448,5 @@ specifiers:
   chai: ^4.2.0
   snowpack: ^3.0.1
   svelte: ^3.24.0
+  svelte-hmr: ^0.12.7
+  svelte-routing: ^1.5.0
