@@ -4,6 +4,7 @@
   import Home from './routes/Home.svelte';
   import About from './routes/About.svelte';
   import Contact from './routes/Contact.svelte';
+  import Rental from './routes/Rental.svelte';
 
   export let url = "";
 
@@ -94,6 +95,7 @@ a, .links {
   <div class="body">
     <Route path="/about" component="{About}"/>
     <Route path="/contact" component="{Contact}"/>
+    <Route path="/rentals/:id" component="{Rental}"/>
     <Route path="/" component="{Home}"/>
   </div>
 </Router>

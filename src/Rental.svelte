@@ -1,4 +1,5 @@
 <script>
+  import { link } from 'svelte-routing';
   export let rental;
 </script>
 
@@ -114,7 +115,7 @@
 
     <div class="details">
       <h3>
-        <a href="/rentals/grand-old-mansion" id="ember20" class="ember-view">
+        <a href="/rentals/{rental.id}" use:link>
           {rental.title}
         </a>
       </h3>

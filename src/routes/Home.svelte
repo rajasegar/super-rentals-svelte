@@ -4,12 +4,19 @@
   import Rental from '../Rental.svelte';
 
   let rentals = [];
+  let query = '';
+
   (async () => {
-    const response = await fetch('/rentals.json');
+    const response = await fetch('/api/rentals.json');
     const data = await response.json();
     console.log(data);
-    rentals = data.data;
+    rentals = data.data.map(r => ({...r.attributes, id: r.id }));
   })();
+
+  $: filteredRentals = query 
+    ? rentals.filter(r => r.title.startsWith(query))
+    : rentals;
+
 </script>
 <style>
 
@@ -67,11 +74,11 @@
 <div class="rentals">
   <label>
     <span>Where would you like to stay?</span>
-    <input type="text"/>
+    <input type="text" bind:value={query}/>
   </label>
   <ul class="rentals">
-    {#each rentals as rental}
-    <Rental rental={rental.attributes}/>
+    {#each filteredRentals as rental}
+    <Rental rental={rental}/>
     {/each}
   </ul>
 
