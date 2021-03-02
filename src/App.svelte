@@ -17,14 +17,17 @@
 </script>
 
 <style>
-  * {
+  @import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,700italic);
+
+  :global(*) {
     margin: 0;
     padding: 0;
   }
 
   :global(body) {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lato,'Open Sans','Helvetica Neue','Segoe UI',Helvetica,Arial,sans-serif;
+    line-height: 1.5;
+    background: #f3f3f3;
   }
 
   .container {
@@ -82,7 +85,7 @@ a, .links {
 <div class="container">
 <Router url="{url}">
   <nav class="menu">
-    <a href="/" use:link><h1>Super Rentals</h1></a>
+    <a href="/" use:link><h1>SuperRentals</h1></a>
       <div class="links">
     <a  href="/about" use:link>About</a>
     <a href="/contact" use:link>Contact</a>

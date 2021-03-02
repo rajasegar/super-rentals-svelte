@@ -3,6 +3,7 @@
     padding: 50px;
     background: #f6f6f6;
   }
+
   .right {
     float: right;
   }
